@@ -7,9 +7,12 @@ Green: 1BBFAB;
 Lime: #7FBA49;
 Purple: 3E41A8;
 */
+html {
+  font-size: 62.5%;
+}
 
 body {
-    width: 1000px; /* TODO: make 900 ?*/
+    width: 100%;
 }
 
 nav {
@@ -31,6 +34,7 @@ nav {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    font-size: 1.5rem;
     margin-left: 20px;
 }
 
@@ -79,10 +83,10 @@ section h2 {
 }
 
 .pups-container {
-    width: 900px;
+    width: 100%;
     margin: 0 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -95,7 +99,7 @@ section h2 {
 
     display: flex;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin: 1rem 3rem;
 }
 
 .pup-pic {
@@ -154,7 +158,10 @@ section h2 {
 .pup-location {
     font-family: 'Open Sans Condensed', sans-serif;
 }
-
+.address,
+.email {
+  font-size: 1.5rem;
+}
 footer {
     background-color: #2B57A1;  /* dark blue */
     display: flex;
@@ -163,4 +170,47 @@ footer {
     padding: 10px 20px;
     color: #FFFFFF;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+@media (min-width: 707px) and (max-width: 1025px)
+
+{
+
+  .pup-wrapper {
+      width: 20rem;
+      height: 30rem;
+
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 1rem 5rem;
+  }
+}
+@media only screen and (max-width: 706px)
+{
+  header {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+  }
+  h1 {
+      font-size: 3.5rem;
+      line-height: 6rem;
+      margin: 1rem;
+  }
+
+  .dog-showcase {
+      width: 31rem;
+      height: 31rem;
+  }
+
+  .dog-showcase img {
+      width: 23rem;
+  }
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
 }
